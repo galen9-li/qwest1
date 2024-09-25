@@ -1,0 +1,36 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+body {font-family: "Roboto", sans-serif ; max-width: 1400px;}
+
+.container { margin: 0 auto; max-width: 1200px;
+padding: 40px 30px; }
+
+.goods { 
+    display: flex;
+    
+    flex-flow: row wrap;
+    gap:10px;
+    justify-content: space-between;
+    height: auto;
+  
+}
+
+@media only screen and (max-width:600px) {
+.goods {flex-direction: column;  }
+}
+
+
+
+.goods__item {
+    display: flex; flex: 1 1 0; flex-direction: column; justify-content: flex-start; 
+}
+
+.goods__implace { width: 100%;  overflow: hidden;  margin-bottom: 10px; height: 100%;}
+.goods__im { width: 100%; height: 100%; object-fit: cover;}
+.goods__bottom {display: flex; flex-direction: column;   justify-content: flex-start; }
+
+.goods__price {font-size: 20px; font-weight: bold; margin-bottom: 10px;}
+.goods_name {font-size: 20px; font-weight: bolder; margin-bottom: 5px; text-transform: uppercase;}
+.title {margin-bottom: 20px; text-transform: uppercase;}
